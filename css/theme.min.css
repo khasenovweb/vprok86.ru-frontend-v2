@@ -12506,7 +12506,7 @@ dd {
 }
 @font-face {
     font-family: "cartzilla-icons";
-    src: url("../fonts/cartzilla-icons.ttf%3Fufvuz0") format("truetype"), url("../fonts/cartzilla-icons.woff%3Fufvuz0") format("woff"), url("../fonts/cartzilla-icons.svg%3Fufvuz0") format("svg");
+    src: url("../fonts/cartzilla-icons.ttf") format("truetype"), url("../fonts/cartzilla-icons.woff") format("woff"), url("../fonts/cartzilla-icons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
