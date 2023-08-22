@@ -1057,5 +1057,29 @@
         <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <!-- Main theme script-->
         <script src="js/theme.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <!-- Плюс Минус -->
+        <style>
+            [data-count-input] {
+                text-align: center;
+            }
+        </style>
+        <script>
+            $('[data-count-plus]').click(function(){
+                var input = $(this).closest('[data-count]').find('[data-count-input]');
+                var val = Number(input.val());
+                input.val( val + 1 );
+            });
+
+            $('[data-count-minus]').click(function(){
+                var input = $(this).closest('[data-count]').find('[data-count-input]');
+                var val = Number(input.val());
+                if (val > 1) {
+                    input.val( val - 1 );
+                }
+            });
+        </script>
+        <!-- END Плюс Минус -->
     </body>
 </html>
